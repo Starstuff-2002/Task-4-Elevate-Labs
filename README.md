@@ -36,16 +36,6 @@ Configure and test basic firewall rules on a Linux system using UFW (Uncomplicat
    - Command: `sudo ufw delete deny 23`
    - Verified using `ufw status` to confirm removal.
 
-## Commands Used
-
-```bash
-sudo ufw status verbose
-sudo ufw status
-sudo ufw deny 23
-telnet localhost 23
-sudo ufw allow 22
-sudo ufw delete deny 23
-
 ## How Firewalls Filter Traffic
 
 Firewalls work as gatekeepers that monitor and control network traffic based on a set of predefined rules. They inspect each data packet and decide whether to allow or block it, based on parameters such as:
@@ -59,3 +49,14 @@ Firewalls work as gatekeepers that monitor and control network traffic based on 
 In Linux, tools like **UFW** simplify the management of these rules by providing an easy-to-use command-line interface over `iptables`, enabling users to create complex filtering rules using straightforward syntax like `allow`, `deny`, and `delete`.
 
 ---
+## Commands Used
+
+```bash
+sudo ufw status verbose
+sudo ufw status
+sudo ufw deny 23
+telnet localhost 23
+sudo ufw allow 22
+sudo ufw delete deny 23
+
+
